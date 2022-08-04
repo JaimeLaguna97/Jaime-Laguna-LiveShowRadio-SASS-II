@@ -1,0 +1,68 @@
+// extends
+.button{
+    -webkit-appearance: none;
+    -webkit-font-smoothing:inherit;
+    background: 0 0;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    outline: 0;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    white-space: normal;
+    width: auto;
+}
+
+.cta {
+    @extend .button;
+    border-radius:1em;
+    border: 1px solid;
+    font-size: $textSm;
+    display: inline-block;
+    overflow: hidden;
+    font-family:$fontMain;
+    font-weight:$textRegular;
+    padding: 0.1em 1em 0;
+    margin-top: 2%;
+    &:hover{   
+        transition-duration: 0,4s;
+        background-color: yellow;
+        color: black;
+    }
+}
+
+// mixin
+@mixin d-flex($justify,$align){
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.section-disc {
+    @include d-flex(center,center);
+    overflow: hidden;
+    img{
+        width: 20%;
+        &:hover{
+            transform:rotate(360deg);
+            transition-duration: 3s;
+        }
+    }
+}
+
+// map
+$paleta:(
+    'uno':yellow,
+    'dos':skyblue,
+    'tres':grey
+    );
+ 
+.dancing-div{
+    margin-top: 2%;
+    padding:0.1em 1em 0;
+    background-color: map-get($map:$paleta,$key:'tres');  
+}
+

@@ -1,0 +1,9 @@
+Con la etiqueta <meta name= "description">, agregue en mi index.html una breve descripcion general del website completo.
+
+Solamente utilice un H1 en esta pagina para aplicarlo en el texto ABOUT US, el cual seria la "carta" de presentacion del sitio.
+
+La idea de mis H1 es usarlos para mostrar lo principal en cada pagina de mi sitio.
+
+Todas las imagenes cuentan con un ALT descritpivo. 
+
+Agregue KEYWORDS al index para describir el contenido general del sitio y lo que ofrece. "MUSIC,VIDEOS,INTERVIEWS,SHOP"
